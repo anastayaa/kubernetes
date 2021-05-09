@@ -7,4 +7,16 @@ pipeline {
             }
         }
     }
+
+    post{
+    	always{
+    		echo "After excecution"
+    	}
+    	success{
+    		echo "pipeline succeed"
+    	}
+    	failure{
+    		echo "pipeline failed"
+    	}
+    }
 }
